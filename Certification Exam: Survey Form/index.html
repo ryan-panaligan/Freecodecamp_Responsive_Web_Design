@@ -7,24 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="title">Share your thoughts on freeCodeCamp.org!</h1>
+    <h1 id="title">Please share your thoughts on freeCodeCamp.org</h1>
    
     <p id="description">Please share your thoughts with us to help future students!</p>
    
     <fieldset>
       <label for="name">Enter your name:</label>
-      <input type="text" id="name" name="name"required>
+      <input type="text" id="name-label" name="name" placeholder="Enter your name" required>
     </form>
 
     <form>
       <label for="email">Enter your email:</label>
-      <input type="email" id="email" name ="email" required>
+      <input type="email" id="email-label" name="email" placeholder="Enter your email" required 
+      oninput="setCustomValidity('')" 
+      oninvalid="setCustomValidity('Please enter a valid email address')">
       </form>
 
       <form>
-      <label for="age">Enter your age:<input id="age" type="number" id="number" name ="age" required min=13 max=120 pattern="0-9" required></label>
-      
+      <label for="age">Enter your age:</label>
+      <input type="number" id="number-label" name="age" placeholder="Age" required min=13 max=120 pattern="0-9" required
+      oninput="setCustomValidity('')" 
+      oninvalid="setCustomValidity('Please enter a value between 13 and 120')">
+      </label>
       </form>
+  <form>
+    <label for="title">How do you describe yourself?
+    <select id="dropdown">
+      <option value="">Select one
+        </option>
+      <option value="1">Student
+       </option>
+     <option value="2">Professional
+       </option>
+     </select>
+    </label>
+      </form>
+    
+    
+      <input type="submit" value="Submit">
 
 
 </body>
