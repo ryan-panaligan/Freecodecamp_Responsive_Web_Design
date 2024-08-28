@@ -17,8 +17,6 @@
     <figure>
      <img src="https://cdn.aarp.net/content/dam/aarp/work/work_at_plus/2019/09/1140-coding-class.jpg" alt="Four adults sitting down working on laptops. An instructor is leaning over a man's shoulder and points at his laptop."> 
             </figure> 
-     
-
      </h2>
      
   <form id=survey-form>
@@ -57,20 +55,50 @@
    
     <fieldset>
         <legend>Would you recommend us to others? (Choose one)</legend>
-        <label id="yes">
+        <label id="yes" style="display:block;">
           <input id="yes" type="radio" name="recommendations" class="inline" value="yes" /> Yes</label>
-        <label id="no"><input id="no" type="radio" name="recommendations" class="inline" value="no" /> No</label>
-        <label id="maybe"><input id="maybe" type="radio" name="recommendations" class="inline" value="maybe"/> Maybe</label>
+        <label id="no" style="display:block;">
+          <input id="no" type="radio" name="recommendations" class="inline" value="no" /> No</label>
+        <label id="maybe" style="display:block;">
+          <input id="maybe" type="radio" name="recommendations" class="inline" value="maybe"/> Maybe</label>
       </fieldset>
     
-    <fieldset>
-     <legend>What would you like to see us add to the curriculum? (Select all that apply)</legend>
-     <input id="tutors" type="checkbox" name="recommendations" value="tutors" > <label for="tutors">Online tutors</label>
-     <input id="recordings" type="checkbox" name="recommendations" value="recordings"> <label for="recordings">Recordings</label>
-     <input id="pdfs" type="checkbox" name="pdfs" value="pdfs"> <label for="pdfs">PDF Documents</label>
-     <input id="peer-group" type="checkbox" name="peer-group" value="peer-group"> <label for="peer-group">Peer Groups</label>
-       </fieldset>
+    <form>
+     <label for="title">What knowledge did you start with before studying with freeCodeCamp.org?
+    <select id="dropdown">
+      <option value="">Select one
+        </option>
+      <option value="1">Absolutely none!
+       </option>
+     <option value="2">I knew a little...
+       </option>
+       <option value="3">I studied it a long time ago.
+       </option>
+       <option value="4">I just wanted a refresher.
+       </option>
+       <option value="2">I know more than you do, youngin'!
+       </option>
+     </select>
+    </label>
+      </form>
 
+    <fieldset>
+    <legend>What would you like to see us add to the curriculum? (Select all that apply)</legend>
+    
+    <label for="tutors" style="display:block;">
+        <input id="tutors" type="checkbox" name="recommendations" value="tutors" class="inline"> Online tutors
+    </label>
+    <label for="recordings" style="display:block;">
+        <input id="recordings" type="checkbox" name="recommendations" value="recordings" class="inline"> Recordings
+    </label>
+    <label for="pdfs" style="display:block;">
+        <input id="pdfs" type="checkbox" name="pdfs" value="pdfs" class="inline"> PDF Documents
+    </label>
+    <label for="peer-group" style="display:block;">
+        <input id="peer-group" type="checkbox" name="peer-group" value="peer-group" class="inline"> Peer Groups
+    </label>
+</fieldset>
+     
       </label>
         <label for="bio">Additional comments or suggestions:
           <textarea id="comments" name="comments" rows="5" cols="75" placeholder="Enter additional comments or suggestions here..."></textarea>
