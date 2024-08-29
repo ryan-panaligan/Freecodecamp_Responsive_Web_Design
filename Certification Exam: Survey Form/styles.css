@@ -4,31 +4,63 @@ body {
   margin: 0;
   background-color: purple;
   color: white;
-  font-family: arial;
-  font-size: 15px;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+}
+
+.knowledge {
+  max-width: 200px
+}
+
+.header {
+  margin: 1em auto;
+  text-align: center;
 }
 
 
 img {
   height: 200px;
-  margin-top: auto;
-  margin-bottom: auto;
+  display: block;
+  margin: auto;
 }
 
 
-h1, p, h2 {
+h1, p, h2, h3, input {
   margin: 1em auto;
   text-align: center;
+}
+
+input {
+  max-width: 200px;
+}
+
+.radio-group {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.radio-group input[type="radio"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.radio-group div {
+  margin-top: 5px;
 }
 
 form {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
-  margin: 20 auto;
-  padding-bottom: 20;
+  margin: 60px auto;
+  padding-bottom: 20px;
 }
 
+.age {
+  max-width: 40px;
+}
 
 fieldset id {
   border: none;
@@ -38,7 +70,11 @@ fieldset id {
 
 label {
   display: block;
-  margin: 0.5rem 0;
+  margin: center;
+}
+
+age {
+ max-width: 10px
 }
 
 input,
@@ -46,18 +82,12 @@ textarea,
 select {
   margin: 10px 0 0 0;
   width: 100%;
-  min-height: 2em;
+  min-height: 0em;
 }
 
 input, textarea {
   background-color: #0a0a23;
   color: #ffffff;
-}
-
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
 }
 
 input[type="submit"] {
@@ -66,19 +96,8 @@ input[type="submit"] {
   margin: 1em auto;
   height: 2em;
   font-size: 1.1rem;
-  background-color: #3b3b4f;
+  background-color: black;
   border-color: white;
-  min-width: 300px;
+  min-width: 600px;
 }
 
-input[type="file"] {
-  padding: 1px 2px;
-}
-
-.inline{
-  display: inline; 
-}
-
-a {
-  color: #dfdfe2;
-}
